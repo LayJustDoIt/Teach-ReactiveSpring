@@ -23,6 +23,12 @@ repositories {
 	mavenCentral()
 }
 
+sourceSets {
+	test {
+		java.srcDirs = ['src/test/java/mock','src/test/java/intg']
+	}
+}
+
 test {
 	exclude 'com/learnreactivespring/fluxandmonoplayground/**'
 }
